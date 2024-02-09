@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("assets/fonts/Norse-Bold.otf") format("otf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Norse-Bold", sans-serif;
+}
