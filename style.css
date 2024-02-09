@@ -13,3 +13,7 @@ body {
   padding: 0;
   font-family: "Norse-Bold", sans-serif;
 }
+
+.image-sidebar {
+  background-image: url("assets/images/halie-west-25xggax4bSA-unsplash\ .jpg");
+}
