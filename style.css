@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 @font-face {
-  font-family: "Norse-Bold";
-  src: url("assets/fonts/Norse-Bold.otf") format("otf");
+  font-family: "Norse Bold";
+  src: url("assets/fonts/Norse-Bold.otf") format("opentype");
 }
 
 html,
@@ -11,9 +13,136 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Norse-Bold", sans-serif;
+  font-family: Roboto, sans-serif;
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+  flex: auto;
 }
 
 .image-sidebar {
+  position: relative;
+  height: 100%;
   background-image: url("assets/images/halie-west-25xggax4bSA-unsplash\ .jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 20%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  height: 100px;
+  width: auto;
+}
+
+.logo > p {
+  font-family: "Norse Bold", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.credit > p {
+  font-size: x-small;
+  color: white;
+}
+
+.credit > p a {
+  color: white;
+}
+
+.form-container {
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > * {
+  padding-left: 40px;
+  padding-right: 200px;
+}
+
+.para1, .para2, .para3 {
+  font-weight: 700;
+}
+
+.para3 {
+  opacity: 0.8;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
+
+.form > div > label {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px #E5E7EB solid;
+  padding: 3px;
+}
+
+input:focus {
+  outline: none;
+  border-color: royalblue;
+  box-shadow: 0 0 3px royalblue;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #166534;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  margin: 30px 0;
+}
+
+.submit-btn > p {
+  margin: 0;
+}
+
+.submit-btn > p a {
+  color: black;
+  text-decoration: none;
+}
+
+.submit-btn > p a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.error {
+  border-color: red;
+}
+
+#errorMessage {
+  color: red;
 }

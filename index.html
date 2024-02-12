@@ -9,64 +9,64 @@
   <body>
     <div class="container">
       <div class="image-sidebar">
-        <img src="assets/icons/odin-lined.png" />
-        <div>
-          Photo by
-          <a
-            href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Halie West</a
-          >
+        <div class="logo">
+          <img src="assets/icons/odin-lined.png" />
+          <p>ODIN</p>
+        </div>
+        <div class="credit">
+          <p>
+          Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a>
           on
-          <a
-            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a
-          >
+          <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
         </div>
       </div>
-      <div class="form">
-        <p>
+      <div class="form-container">
+        <p class="para1">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.<br />Sign
           up now to get started.
         </p>
 
-        <p>You know you want to</p>
+        <p class="para2">You know you want to.</p>
 
-        <p>Let's do this!</p>
+        <p class="para3">Let's do this!</p>
 
-        <form>
-          <div>
+        <form class="form">
             <div>
               <label for="f_name">FIRST NAME</label><br />
-              <input type="text" id="f_name" />
+              <input type="text" id="f_name" required />
             </div>
             <div>
               <label for="l_name">LAST NAME</label><br />
-              <input type="text" id="l_name" />
+              <input type="text" id="l_name" required />
             </div>
             <div>
               <label for="email">EMAIL</label><br />
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
             </div>
             <div>
-              <label for="phone_no">PHONE NNUMBER</label><br />
-              <input type="text" id="phone_no" />
+              <label for="phone_no">PHONE NUMBER</label><br />
+              <input type="text" id="phone_no" required />
             </div>
             <div>
               <label for="password1">PASSWORD</label><br />
-              <input type="password" id="password1" />
+              <input type="password" id="password1" required />
+              <p id="errorMessage"></p>
             </div>
             <div>
               <label for="password2">CONFIRM PASSWORD</label><br />
-              <input type="password" id="password2" />
+              <input type="password" id="password2" required />
             </div>
-          </div>
-          <div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a>Log In</a></p>
-          </div>
+            <button type="submit" class="submitBtn" style="display: none;"></button>
         </form>
+        <div class="submit-btn">
+          <button type="submit" id="submitButton">Create Account</button>
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
